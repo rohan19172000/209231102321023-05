@@ -15,7 +15,7 @@ POST: Create a new user
 ## /users/{id}
 GET: Get a user by their ID
 PUT: Update a user by ID
-DELETE: Delete a user by ID (Check if he/she still have an issued book) && (is there any fine to be collected from jim/her)
+DELETE: Delete a user by ID (Check if he/she still have an issued book) && (is there any fine to be collected from him/her)
 
 
 # Subscription Types:
@@ -58,4 +58,4 @@ GET: Get all issued books with fine
 >> npm i nodemon --save dev
 
 ### Run cmd
-npm run dec
+npm run dev

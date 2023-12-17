@@ -1,6 +1,8 @@
 const express = require("express");
-// const {users} = require("./data/users.json");
-// const {books} = require("./data/books.json");
+
+// importing routes
+const userRouter = require("./routes/users");
+// const booksRouter = require("./routes/books");
 
 const app = express();
 
@@ -14,19 +16,10 @@ app.get("/", (req,res)=>{
     })
 })
 
-/**
- * Route: /users
- * Method: GET
- * Desciption: Get all users
- * Access: Public
- * Paramters: None
- */
-// app.get("/users",(req,res)=>{
-//     res.status(200).json({
-//         success: true,
-//         data: users
-//     })
-// })
+
+app.use("/users",userRouter);
+// app.use("/books", booksRouter);
+
 
 app.all("*", (req,res)=>{
     res.status(500).json({
