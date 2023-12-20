@@ -59,3 +59,9 @@ GET: Get all issued books with fine
 
 ### Run cmd
 npm run dev
+
+
+MVC Architecture:
+M: Model (Tells us structure of MongoDb Collection)
+V: View (UI)
+C: Controller (Brai/Logic of a router)
